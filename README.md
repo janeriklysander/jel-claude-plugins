@@ -12,24 +12,26 @@ Curated plugins for [Claude Code](https://claude.com/claude-code) — a document
 
 ## Installation
 
-Install a plugin from this marketplace:
+From inside a Claude Code session, first add the marketplace:
 
-```bash
-claude plugin add janeriklysander/agentic-plugins --name docs-system
+```
+/plugin marketplace add janeriklysander/agentic-plugins
 ```
 
-Replace `docs-system` with the plugin you want. To install all plugins from the marketplace:
+Then install a plugin:
 
-```bash
-claude plugin add janeriklysander/agentic-plugins
 ```
+/plugin install docs-system@agentic-plugins
+```
+
+Replace `docs-system` with the plugin you want. Or run `/plugin` to browse and install interactively.
 
 ## Reference guides
 
-These standalone guides live in `docs/` and are not plugins — they're reference documentation for Claude Code users:
+Standalone reference documentation for Claude Code users, hosted at [janeriklysander.github.io/agentic-plugins](https://janeriklysander.github.io/agentic-plugins/):
 
-- [1Password SSH agent setup](docs/1password-ssh-agent-setup.md) — configure 1Password's SSH agent to work inside Claude Code's sandbox (macOS and WSL2)
-- [Claude Code security hardening](docs/claude-code-security-hardening.md) — three-layer permission and sandbox configuration to reduce prompt fatigue and protect against prompt injection
+- [1Password SSH agent setup](https://janeriklysander.github.io/agentic-plugins/1password-ssh-agent-setup) — configure 1Password's SSH agent to work inside Claude Code's sandbox (macOS and WSL2)
+- [Claude Code security hardening](https://janeriklysander.github.io/agentic-plugins/claude-code-security-hardening) — three-layer permission and sandbox configuration to reduce prompt fatigue and protect against prompt injection
 
 ## Optional dependencies
 
