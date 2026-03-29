@@ -1,0 +1,26 @@
+{
+  "name": "agentic-plugins",
+  "owner": {
+    "name": "Jan-Erik Lysander"
+  },
+  "metadata": {
+    "description": "Curated Claude Code plugins for documentation, domain design, and hook automation"
+  },
+  "plugins": [
+    {
+      "name": "docs-system",
+      "source": "./plugins/docs-system",
+      "description": "Documentation skill with Diataxis framework, templates, and a tech-writer-reviewer agent"
+    },
+    {
+      "name": "ddd-design",
+      "source": "./plugins/ddd-design",
+      "description": "Structured Domain-Driven Design discovery sessions"
+    },
+    {
+      "name": "create-hook",
+      "source": "./plugins/create-hook",
+      "description": "Guide for creating Claude Code hooks with shell scripts"
+    }
+  ]
+}

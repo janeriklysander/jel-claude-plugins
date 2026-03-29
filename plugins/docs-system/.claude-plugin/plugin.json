@@ -1,0 +1,9 @@
+{
+  "name": "docs-system",
+  "version": "1.0.0",
+  "description": "Documentation skill with Diataxis framework, templates, and a tech-writer-reviewer agent",
+  "author": { "name": "Jan-Erik Lysander" },
+  "repository": "https://github.com/janeriklysander/agentic-plugins",
+  "license": "MIT",
+  "keywords": ["documentation", "diataxis", "technical-writing", "templates"]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ddd-design",
+  "version": "1.0.0",
+  "description": "Structured Domain-Driven Design discovery sessions",
+  "author": { "name": "Jan-Erik Lysander" },
+  "repository": "https://github.com/janeriklysander/agentic-plugins",
+  "license": "MIT",
+  "keywords": ["ddd", "domain-driven-design", "architecture", "modeling"]
+}
