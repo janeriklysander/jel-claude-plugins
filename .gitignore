@@ -9,3 +9,7 @@
 .vscode/
 .zprofile
 .zshrc
+
+# Vale third-party style packages (downloaded by `vale sync`)
+**/.vale/styles/Google/
+**/.vale/styles/write-good/

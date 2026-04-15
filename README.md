@@ -1,6 +1,6 @@
 # Jan-Erik Lysander's Claude Code Plugins
 
-My personal collection of [Claude Code](https://claude.com/claude-code) plugins for documentation, domain-driven design, hook authoring, and code review.
+My personal collection of [Claude Code](https://claude.com/claude-code) plugins for engineering, domain-driven design, and hook automation.
 
 ## Installation
 
@@ -14,12 +14,12 @@ Then install any plugin below. If you prefer to browse interactively, run `/plug
 
 ## Plugins
 
-### [docs-system](plugins/docs-system/README.md)
+### [engineering-toolkit](plugins/engineering-toolkit/README.md)
 
-Documentation skill with the Diátaxis framework, 8 templates, and a tech-writer-reviewer agent.
+Multi-agent code review across 7 dimensions (correctness, security, architecture, performance, maintainability, observability, documentation) and doc authoring with the Diátaxis framework, 8 templates, and linting.
 
 ```text
-/plugin install docs-system@jel-claude-plugins
+/plugin install engineering-toolkit@jel-claude-plugins
 ```
 
 ### [ddd-design](plugins/ddd-design/README.md)
@@ -38,14 +38,6 @@ Step-by-step guide for writing Claude Code hooks as shell scripts and wiring the
 /plugin install create-hook@jel-claude-plugins
 ```
 
-### [code-review](plugins/code-review/README.md)
-
-Multi-agent code review — dispatches specialist agents (correctness, security, architecture, performance, maintainability, observability), normalizes findings by severity, and creates follow-up issues for descoped items.
-
-```text
-/plugin install code-review@jel-claude-plugins
-```
-
 ## Reference guides
 
 Standalone reference documentation for Claude Code users, hosted at [janeriklysander.github.io/jel-claude-plugins](https://janeriklysander.github.io/jel-claude-plugins/):
@@ -55,7 +47,7 @@ Standalone reference documentation for Claude Code users, hosted at [janeriklysa
 
 ## Optional dependencies
 
-The **docs-system** plugin's lint script uses [Vale](https://vale.sh/) and [markdownlint](https://github.com/DavidAnson/markdownlint-cli2). Both are optional — if you don't have them installed, the skill and reviewer agent skip linting and note it in their output. See the [docs-system README](plugins/docs-system/README.md) for install instructions.
+The **engineering-toolkit** plugin's lint script uses [Vale](https://vale.sh/) and [markdownlint](https://github.com/DavidAnson/markdownlint-cli2). Both are optional — if you don't have them installed, the skill and documentation agent skip linting and note it in their output. See the [engineering-toolkit README](plugins/engineering-toolkit/README.md) for install instructions.
 
 ## Development setup
 
@@ -69,7 +61,7 @@ A pre-commit hook enforces that any change to a plugin includes a version bump i
 
 ## Contributing
 
-Feedback and bug reports are welcome via [GitHub Issues](https://github.com/janeriklysander/jel-claude-plugins/issues). There is no roadmap — this is a personal collection shared with the community.
+Feedback and bug reports are welcome via [GitHub Issues](https://github.com/janeriklysander/jel-claude-plugins/issues). This project has no roadmap — it's a personal collection shared with the community.
 
 ## License
 

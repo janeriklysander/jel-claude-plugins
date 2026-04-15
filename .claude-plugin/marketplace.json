@@ -4,13 +4,13 @@
     "name": "Jan-Erik Lysander"
   },
   "metadata": {
-    "description": "Curated Claude Code plugins for documentation, domain design, hook automation, and code review"
+    "description": "Curated Claude Code plugins for engineering, domain design, and hook automation"
   },
   "plugins": [
     {
-      "name": "docs-system",
-      "source": "./plugins/docs-system",
-      "description": "Documentation skill with Diataxis framework, templates, and a tech-writer-reviewer agent"
+      "name": "engineering-toolkit",
+      "source": "./plugins/engineering-toolkit",
+      "description": "Multi-agent code review (7 dimensions including documentation) and doc authoring with Diataxis framework, templates, and linting"
     },
     {
       "name": "ddd-design",
@@ -21,11 +21,6 @@
       "name": "create-hook",
       "source": "./plugins/create-hook",
       "description": "Guide for creating Claude Code hooks with shell scripts"
-    },
-    {
-      "name": "code-review",
-      "source": "./plugins/code-review",
-      "description": "Multi-agent code review with specialist agents for correctness, security, architecture, performance, maintainability, and observability"
     }
   ]
 }
