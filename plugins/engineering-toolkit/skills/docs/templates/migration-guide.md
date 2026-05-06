@@ -30,19 +30,19 @@ List every breaking change with a clear before/after comparison. This is the sec
 
 Use a consistent format:
 
-```markdown
+````markdown
 #### Renamed `getUser()` to `fetchUser()`
 
 **Before:**
-\`\`\`javascript
+```javascript
 const user = client.getUser(id);
-\`\`\`
+```
 
 **After:**
-\`\`\`javascript
+```javascript
 const user = client.fetchUser(id);
-\`\`\`
 ```
+````
 
 ### Prerequisites (essential)
 

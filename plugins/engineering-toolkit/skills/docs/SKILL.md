@@ -11,14 +11,20 @@ Write clear, warm, well-structured documentation that helps readers accomplish t
 
 ## Workflow
 
-### 1. Determine what needs documenting
+### 1. Clarify what needs documenting
 
-If the user has explicitly stated what they want documented, proceed to step 2.
+Before writing anything, work through this checklist. For each item that isn't answered by the user's request or the codebase, ask before proceeding.
 
-If not, ask:
+| Question | What to establish |
+| --- | --- |
+| **What** | Scope — new feature, entire system, specific workflow, or update to existing doc? |
+| **Who** | Audience — determines terminology, detail level, and which examples resonate |
+| **Why** | Reader's need — do they want an overview, a task walkthrough, step-by-step instructions, or a lookup? Maps directly to Diátaxis type. |
+| **Where** | Doc location — default `docs/` in repo root; discuss if that doesn't fit the audience or delivery channel |
+| **How** | How does this thing work *in this codebase specifically*? Document the implementation, not the general concept. |
+| **When** | Usage context — development, onboarding, incident response, or maintenance? |
 
-- What are you documenting?
-- What type of document is this? (see routing table below)
+You don't need all six answers for every doc. A trivial README update needs almost none of them. A new runbook needs all of them. Use judgment about which gaps matter.
 
 ### 2. Determine the audience
 

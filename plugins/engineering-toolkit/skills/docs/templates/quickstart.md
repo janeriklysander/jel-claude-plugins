@@ -45,7 +45,7 @@ Link to 2-3 logical follow-ups: a deeper tutorial, common how-to guides, or the 
 
 ## Example skeleton
 
-```markdown
+````markdown
 # Get started with Acme SDK
 
 Set up the Acme SDK and create your first widget in under five minutes.
@@ -59,26 +59,26 @@ Set up the Acme SDK and create your first widget in under five minutes.
 
 ### 1. Install the SDK
 
-\`\`\`bash
+```bash
 pip install acme-sdk
-\`\`\`
+```
 
 ### 2. Configure your API key
 
-\`\`\`bash
+```bash
 export ACME_API_KEY="ak_test_..."
-\`\`\`
+```
 
 ### 3. Create your first widget
 
-\`\`\`python
+```python
 from acme import Client
 
 client = Client()
 widget = client.widgets.create(name="My Widget")
 print(widget.id)
 # => wgt_1a2b3c4d
-\`\`\`
+```
 
 ### 4. Verify
 
@@ -88,7 +88,7 @@ Open https://dashboard.acme.com/widgets — your new widget appears in the list.
 
 - [Configure widget properties](how-to/configure-widgets.md)
 - [API reference: Widgets](reference/widgets.md)
-```
+````
 
 ## Common mistakes
 
