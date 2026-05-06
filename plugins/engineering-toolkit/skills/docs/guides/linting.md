@@ -51,7 +51,7 @@ If Vale is not installed, the lint script skips it and prints a notice. To enabl
 2. **Download style packages:**
 
    ```bash
-   cd .claude/skills/documentation/scripts
+   cd ${CLAUDE_SKILL_DIR}/scripts
    vale sync
    ```
 

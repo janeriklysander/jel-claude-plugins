@@ -13,6 +13,22 @@ quadrantChart
     quadrant-4 Reference
 ```
 
+## How the types link together
+
+The four types are complementary, not competing. A reader who finishes a Tutorial should know where to find How-to Guides for everyday tasks, Reference for lookup, and Explanation when they want to go deeper.
+
+```mermaid
+graph LR
+    T[Tutorial] -->|"ready to work → "| H[How-to Guide]
+    H -->|"need detail → "| R[Reference]
+    T -->|"want to understand → "| E[Explanation]
+    H -->|"want to understand → "| E
+    E -->|"ready to try → "| T
+    R -->|"need context → "| E
+```
+
+Cross-link freely between types. A Tutorial can say "for all options, see the [Reference](...)". A How-to Guide can say "to understand why, see [Explanation](...)". The page itself stays in its lane — the links are how readers navigate between lanes.
+
 ## The Four Types
 
 ### Tutorial (learning + practical)
@@ -29,6 +45,10 @@ The author is responsible for the learner's success. A tutorial is a lesson — 
 
 **Example:** "Build your first payment form" — walks the reader through every step from zero to a working result.
 
+**What it's not:** A reference listing every option. A conceptual explanation of how payments work. A checklist for an experienced user.
+
+**What it links to:** How-to Guides for follow-on tasks. Explanation if the reader wants to understand the concepts they just practiced.
+
 ### How-to Guide (working + practical)
 
 **Purpose:** Help a competent user solve a specific problem.
@@ -41,6 +61,10 @@ Assumes the reader already understands the basics and has a concrete goal.
 - Don't teach foundational concepts — link to tutorials or explanations instead
 
 **Example:** "How to add webhook retries" — assumes the reader knows what webhooks are and just needs the steps.
+
+**What it's not:** A tutorial that teaches the reader from scratch. A reference that exhaustively covers every option. A conceptual explanation of why the feature works.
+
+**What it links to:** Reference for full option lists and parameter details. Explanation when the reader asks "why does this work this way?". Other How-to Guides for related tasks.
 
 ### Reference (working + theoretical)
 
@@ -56,6 +80,10 @@ Reference docs describe the machinery. They must be austere, consistent, and exh
 
 **Example:** "API reference: POST /v1/charges" — lists every field, type, constraint, and error.
 
+**What it's not:** A guide to accomplishing a task. A conceptual overview. An opinionated recommendation.
+
+**What it links to:** How-to Guides that show how to use the API for common tasks. Explanation for architectural context.
+
 ### Explanation (learning + theoretical)
 
 **Purpose:** Build deeper understanding of concepts, design decisions, and trade-offs.
@@ -68,6 +96,10 @@ This is where "why" questions get answered. Explanation docs provide context tha
 - Not tied to a specific task or procedure
 
 **Example:** "How Stripe's idempotency works" — explains the design, not the API call.
+
+**What it's not:** A procedure for doing something. A comprehensive reference. A tutorial with hands-on steps.
+
+**What it links to:** Tutorials for readers who want to learn by doing after reading theory. Reference for the exact details of what's been explained.
 
 ## The Cardinal Rule
 

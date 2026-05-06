@@ -49,7 +49,7 @@ If there are common failure modes for this specific task, list them with symptom
 
 ## Example skeleton
 
-```markdown
+````markdown
 # How to add webhook retries
 
 Configure automatic retries for failed webhook deliveries so your integration handles transient errors gracefully.
@@ -69,7 +69,7 @@ Navigate to **Settings > Webhooks** and select the endpoint you want to configur
 
 Add the retry configuration to your webhook endpoint:
 
-\`\`\`python
+```python
 client.webhooks.update(
     endpoint_id="we_1a2b3c",
     retry_policy={
@@ -77,19 +77,19 @@ client.webhooks.update(
         "backoff": "exponential",
     },
 )
-\`\`\`
+```
 
 ### 3. Verify retry behavior
 
 Trigger a test event and check the delivery log:
 
-\`\`\`python
+```python
 deliveries = client.webhooks.list_deliveries(endpoint_id="we_1a2b3c")
 print(deliveries[0].attempts)
 # => 1
-\`\`\`
+```
 
 ## Troubleshooting
 
 **Retries not firing:** Check that your endpoint returns a 5xx status on failure. 4xx responses are treated as permanent failures and are not retried.
-```
+````

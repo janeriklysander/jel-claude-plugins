@@ -46,17 +46,17 @@ Numbered steps. Each step has:
 
 Example format:
 
-```markdown
+````markdown
 ### 1. Check current primary node
 
-\`\`\`bash
+```bash
 kubectl get pods -n database -l role=primary -o wide
-\`\`\`
+```
 
 **Expected:** One pod in `Running` state with `READY 1/1`.
 
 **If it fails:** If no primary pod exists, skip to step 5 (emergency recovery).
-```
+````
 
 ### Rollback (recommended)
 
